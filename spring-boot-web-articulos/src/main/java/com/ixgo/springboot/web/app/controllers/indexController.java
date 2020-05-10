@@ -15,6 +15,13 @@ public class indexController {
 		model.addAttribute("titulo","Prueba Haziel");
 		return "index";
 	}
-	
+	/*
+	*Lista:
+	*-Crear un paquete, dentro una clase Java llamada Artiulos con los atributos chidos, set y get.
+	*-Crear un html "articulos.html" con lo "mismo" de "index.html".
+	*-Crear una tabla en el "articulos.hmtl" con los titulos de sus atributos de "heading", y 
+	*desplegar todo el contenido que tenga el objeto "Articulos" con el "th:each".
+	*-y YA! :D
+	*/
 }
 	
