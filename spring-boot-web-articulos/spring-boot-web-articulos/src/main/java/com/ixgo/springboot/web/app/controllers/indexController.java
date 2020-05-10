@@ -6,15 +6,15 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
-@RequestMapping ("/app")
 
+@RequestMapping ("/app")
 public class indexController {
 
 	@GetMapping("/index")
 	public String index(Model model) {
+		model.addAttribute("titulo","Articulos-Inicio");
 		return "index";
 	}
-	//asdasd
-	//sdasd
+	
 }
 	
