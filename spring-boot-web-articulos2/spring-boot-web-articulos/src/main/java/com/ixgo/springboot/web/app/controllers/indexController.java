@@ -12,6 +12,7 @@ public class indexController {
 
 	@GetMapping("/index")
 	public String index(Model model) {
+		model.addAttribute("titulo","Inicio de Articulos");
 		return "index";
 	}
 }
