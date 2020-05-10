@@ -22,6 +22,7 @@ public class indexController {
 	*-Crear una tabla en el "articulos.hmtl" con los titulos de sus atributos de "heading", y 
 	*desplegar todo el contenido que tenga el objeto "Articulos" con el "th:each".
 	*-y YA! :D
+	*quedo bien
 	*/
 }
 	
