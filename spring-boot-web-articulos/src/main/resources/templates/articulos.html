@@ -9,9 +9,28 @@
 </head>
 <body style="background-color:#0F528B" >
 <div  class="fluid-container" align="center" style="padding:50px">
-	<font color="white">
-		<h1 th:text="${titulo}"></h1>
-	</font>
+		<font color="white">
+			<h1 th:text="${titulo}"></h1>
+		</font>
+		
+		<table>
+			<thead>
+			<tr>
+				<th>Descripción</th>
+				<th>Precio</th>
+				<th>Marca</th>
+				<th>Cantidad</th>
+				<th>Proveedor</th>
+			</tr>
+			</thead>
+			<tbody>
+				<tr th:each="art:${articulos}">
+					<td th:text="${art.descripcion}"></td>
+				</tr>
+			</tbody>
+			
+		</table>
+		
 		<hr>
 		<br><br>
 		<a type="button" align="center" class="btn btn-primary" href="/app/index" >Ir a Inicio</a>

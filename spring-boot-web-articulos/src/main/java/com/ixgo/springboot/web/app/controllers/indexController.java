@@ -1,9 +1,14 @@
 package com.ixgo.springboot.web.app.controllers;
 
+import java.util.Arrays;
+import java.util.List;
+
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
+import com.ixgo.springboot.web.app.models.Articulos;
 
 @Controller
 
@@ -16,23 +21,20 @@ public class indexController {
 		return "index";
 	}
 	
-	@RequestMapping ("/art")
+	@RequestMapping ("/articulos")
 	public String articulos(Model model) {
 		model.addAttribute("titulo", "Artículos");
 		return "articulos";
 	}
-	
-	
-	
-	
-	/*
-	*Lista:
-	*-Crear un paquete, dentro una clase Java llamada Artiulos con los atributos chidos, set y get.
-	*-Crear un html "articulos.html" con lo "mismo" de "index.html".
-	*-Crear una tabla en el "articulos.hmtl" con los titulos de sus atributos de "heading", y 
-	*desplegar todo el contenido que tenga el objeto "Articulos" con el "th:each".
-	*-y YA! :D
-	*quedo bien
-	*/
+	@ModelAttribute("articulos")
+	public List<Articulos> llenarArticulos(){
+		List<Articulos> usuarios= Arrays.asList(
+				new Articulos("Perros verdes",123.2f,"Chevrolet",2,"Mc Donalds"),
+				new Articulos("Perros Rojos",883.0f,"Chevrolet",1,"Logitech"),
+				new Articulos("Perros Rosados",24.4f,"Chevrolet",6,"SEMARNAT"),
+				new Articulos("Perros Azules",50.0f,"Chevrolet",3,"Bimbo")
+				);
+		return usuarios;
+	}
 }
 	
