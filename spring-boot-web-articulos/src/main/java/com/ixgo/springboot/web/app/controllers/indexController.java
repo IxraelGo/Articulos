@@ -34,7 +34,7 @@ public class indexController {
 				new Articulos("Guitarra eléctrica",7000.0f,"Fender",6,"Quintana Rock"),
 				new Articulos("Tun-kul de madera",3000f,"Pakal",3,"Humbatz"),
 				new Articulos("Bolsa de frijol de 1kg",14.0f,"El Sierra",1,"La Costeña"),
-				new Articulos("Galleta Globitos",3000f,"Dondé",2,"ESR"),
+				new Articulos("Galleta Globitos",150f,"Dondé",2,"ESR"),
 				new Articulos("Sopa Nisisn",13.0f,"Cup Noodles",10,"NISSIN")
 				);
 		return usuarios;
