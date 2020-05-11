@@ -32,7 +32,9 @@ public class indexController {
 				new Articulos("Refresco de cola de 3L",40.0f,"Coca cola",2,"Bepensa"),
 				new Articulos("Teclado gamer",500.0f,"Logitech",1,"Coppel"),
 				new Articulos("Guitarra eléctrica",7000.0f,"Fender",6,"Quintana Rock"),
-				new Articulos("Tun-kul de madera",3000,"Pakal",3,"Humbatz")
+				new Articulos("Tun-kul de madera",3000f,"Pakal",3,"Humbatz"),
+				new Articulos("Bolsa de frijol de 1kg",14.0f,"El Sierra",1,"La Costeña"),
+				new Articulos("Galleta Globitos",13.0f,"Dondé",2,"Los hermanos Pedros")
 				);
 		return usuarios;
 	}
