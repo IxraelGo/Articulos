@@ -29,10 +29,10 @@ public class indexController {
 	@ModelAttribute("articulos")
 	public List<Articulos> llenarArticulos(){
 		List<Articulos> usuarios= Arrays.asList(
-				new Articulos("Perros verdes",123.2f,"Chevrolet",2,"Mc Donalds"),
-				new Articulos("Perros Rojos",883.0f,"Chevrolet",1,"Logitech"),
-				new Articulos("Perros Rosados",24.4f,"Chevrolet",6,"SEMARNAT"),
-				new Articulos("Perros Azules",50.0f,"Chevrolet",3,"Bimbo")
+				new Articulos("Refresco de cola de 3L",40.0f,"Coca cola",2,"Bepensa"),
+				new Articulos("Teclado gamer",500.0f,"Logitech",1,"Coppel"),
+				new Articulos("Guitarra eléctrica",7000.0f,"Fender",6,"Quintana Rock"),
+				new Articulos("Tun-kul de madera",3000,"Pakal",3,"Humbatz")
 				);
 		return usuarios;
 	}

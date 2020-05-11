@@ -7,65 +7,53 @@
 	integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
 	
 </head>
-<body style="background-color:#0F528B" >
+<body style="background-color:#CCE3F7" >
 <div  class="fluid-container" align="center" style="padding:50px">
-		<font color="white">
+		<font color="#013B6C">
 			<h1 th:text="${titulo}"></h1>
 		</font>
-		<hr>
+		<hr color="#9FBAD1">
+		
 		 <table class="table table-bordered table-hover">
-		 <br>
 		 <br>
 		 <br>
 		 <br>
 		 <br>		 
         <thead>
-            <tr>
-                <th scope="col">First</th>
-                <th scope="col">Last</th>
-                <th scope="col">Handle</th>
+            <tr bgcolor="#6F97BA">
+                <th scope="col">Descripcion</th>
+                <th scope="col">Precio ($)</th>
+                <th scope="col">Marca</th>
+                <th scope="col">Cantidad</th>
+                <th scope="col">Proveedor</th>
             </tr>
         </thead>
-	        <tbody class="table-success">
-	            <tr>
-	                <td>Mark</td>
-	                <td>Otto</td>
-	                <td>@mdo</td>
+	        <tbody class="table">
+	            <tr th:each="art:${articulos}">
+	                <td th:text="${art.descripcion}"></td>
+	                <td th:text="${art.precio}"></td>
+	                <td th:text="${art.marca}"></td>
+	                <td th:text="${art.cantidad}"></td>
+	                <td th:text="${art.proveedor}"></td>
+	                
 	            </tr>
-	            <tr>
-	                <td>Jacob</td>
-	                <td>Thornton</td>
-	                <td>@fat</td>
-	            </tr>
-	            <tr>
-	                <td>Larry</td>
-	                <td>the Bird</td>
-	                <td>@twitter</td>
-	            </tr>
+	            
 	        </tbody>
     	</table>
-		<!--  
-		<table>
-			<thead>
-			<tr>
-				<th>Descripción</th>
-				<th>Precio</th>
-				<th>Marca</th>
-				<th>Cantidad</th>
-				<th>Proveedor</th>
-			</tr>
-			</thead>
-			<tbody>
-				<tr th:each="art:${articulos}">
-					<td th:text="${art.descripcion}"></td>
-				</tr>
-			</tbody>
-			
-		</table>
-		-->
+		
+		
+	
 
 		<br><br>
 		<a type="button" align="center" class="btn btn-primary" href="/app/index" >Ir a Inicio</a>
 	</div>
+	
+	
+	<footer id="sticky-footer" class="py-4 bg-dark text-white-50">
+    <div class="container text-center">
+      <small>Copyright &copy; Quark_2 <br>Israel Ix, Haziel Kau, Ari Yam</small>
+    </div>
+  </footer>
+	
 </body>
 </html>
