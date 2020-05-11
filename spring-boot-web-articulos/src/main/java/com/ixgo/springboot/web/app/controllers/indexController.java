@@ -12,9 +12,19 @@ public class indexController {
 
 	@GetMapping("/index")
 	public String index(Model model) {
-		model.addAttribute("titulo","Prueba Haziel");
+		model.addAttribute("titulo","Inicio artículos");
 		return "index";
 	}
+	
+	@RequestMapping ("/art")
+	public String articulos(Model model) {
+		model.addAttribute("titulo", "Artículos");
+		return "articulos";
+	}
+	
+	
+	
+	
 	/*
 	*Lista:
 	*-Crear un paquete, dentro una clase Java llamada Artiulos con los atributos chidos, set y get.
